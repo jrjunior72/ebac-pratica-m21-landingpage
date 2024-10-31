@@ -1,0 +1,104 @@
+// main.scss
+
+// importar fontes
+@font-face {
+    font-family: Avenir;
+    src: url(../..fonts/Avenir-Regular.woff2);
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: Avenir;
+    src: url(../..fonts/Avenir-Bold.woff2);
+    font-weight: 700;
+}
+
+// Variables
+$primary-color: #007bff;
+$secondary-color: #6c757d;
+$dark-color: #343a40;
+$light-color: #f8f9fa; // #f8f9fa;
+
+// reset layout
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Avenir, sans-serif; 
+    list-style: none;
+}
+
+// Body Styling
+body {
+    // font-family: Arial, sans-serif;
+}
+
+// Typography
+h1, h2 {
+    // font-family: 'Georgia', serif;
+}
+
+// Header
+header {
+    background-image: url(../images/homeland_tv_series_wide.jpg);
+    background-size: cover;
+    background-position: center;
+    color: white;
+    text-align: center;
+    padding: 5rem 0;
+
+    h1 {
+        font-size: 3rem;
+    }
+
+    p {
+        font-size: 1.2rem;
+    }
+}
+
+// Sections
+section {
+    padding: 4rem 0;
+}
+
+.bg-light {
+    background-color: $light-color;
+}
+
+.bg-dark {
+    background-color: $dark-color;
+    color: white;
+}
+
+// Footer
+footer {
+    background-color: $dark-color;
+    color: $light-color;
+    padding: 1.5rem 0;
+
+    ul {
+        list-style-type: none;
+        padding: 0;
+    
+        li {
+            display: inline;
+            margin: 0 1rem;
+        }
+
+        a {
+            color: $primary-color;
+            text-decoration: none;
+        
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+    }
+}
+// Blockquote Styling
+blockquote {
+    background-color: $light-color;
+    padding: 15px;
+    border-left: 5px solid $primary-color;
+    margin: 2rem 0;
+}
