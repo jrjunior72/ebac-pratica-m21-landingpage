@@ -13,6 +13,12 @@
     font-weight: 700;
 }
 
+@font-face { 
+    font-family: Coalition;
+    //src: url(../..fonts/Coalition_v2.ttf);
+    src: url(/assets/fonts/Coalition_v2.ttf) format('truetype');
+}
+
 // Variables
 $primary-color: #007bff;
 $secondary-color: #6c757d;
@@ -24,35 +30,50 @@ $light-color: #f8f9fa; // #f8f9fa;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: Avenir, sans-serif; 
+    //font-family: Avenir, sans-serif; 
     list-style: none;
 }
 
 // Body Styling
 body {
     // font-family: Arial, sans-serif;
+    max-width: 1320px;
 }
 
 // Typography
-h1, h2 {
-    // font-family: 'Georgia', serif;
+nav, h2 {
+    font-family: Coalition;
+    font-size: 1.5rem;
 }
 
 // Header
 header {
-    background-image: url(../images/homeland_tv_series_wide.jpg);
-    background-size: cover;
+    background-image: url(../images/homeland_tv_series_wide_1296x600.jpg);
+    background-size:cover;
     background-position: center;
     color: white;
-    text-align: center;
+    //text-align: center;
     padding: 5rem 0;
+    min-height: 579px;
+
+    .hero {
+        //margin: 0; // top right bottom left
+
+        &__content {
+
+            margin: 0;
+
+        }
+    }
 
     h1 {
         font-size: 3rem;
+        filter: blur(0);
     }
 
     p {
         font-size: 1.2rem;
+        filter: blur(0);
     }
 }
 
@@ -63,6 +84,7 @@ section {
 
 .bg-light {
     background-color: $light-color;
+    //color: $dark-color;
 }
 
 .bg-dark {
@@ -72,8 +94,8 @@ section {
 
 // Footer
 footer {
-    background-color: $dark-color;
-    color: $light-color;
+    //background-color: $dark-color;
+    //color: $light-color;
     padding: 1.5rem 0;
 
     ul {
@@ -89,16 +111,21 @@ footer {
             color: $primary-color;
             text-decoration: none;
         
-            &:hover {
-                text-decoration: underline;
-            }
+            // &:hover {
+            //     text-decoration: underline;
+            // }
         }
     }
 }
 // Blockquote Styling
 blockquote {
-    background-color: $light-color;
+    background-color: $dark-color;
     padding: 15px;
     border-left: 5px solid $primary-color;
     margin: 2rem 0;
 }
+
+.carousel.inner {
+    max-height: 200px; 
+}
+

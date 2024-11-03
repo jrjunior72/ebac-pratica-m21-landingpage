@@ -6,20 +6,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Entre no Mundo de Espionagem e Intriga com Homeland</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <link rel="stylesheet" href="./dist/css/main.css">
 </head>
 
-<body>
+<body class="container bg-dark">
     <!-- Navbar -->
     <nav class="navbar navbar-dark bg-dark">
-        <div class="container-fluid">
+        <div class="container container-fluid">
             <a class="navbar-brand" href="#">Homeland</a>
         </div>
     </nav>
 
     <!-- Main Title Section -->
-    <header class="bg-dark text-light text-center py-5">
-        <div class="container">
+    <header class="bg-dark text-light text-end py-5 hero">
+        <div class="container hero__content">
             <h1>Entre no Mundo de Espionagem e Intriga com Homeland</h1>
             <p class="lead">Uma Jornada de Conspiração e Suspense em Cada Episódio</p>
         </div>
@@ -38,30 +39,70 @@
                     </p>
                 </div>
                 <div class="col-md-6">
-                    <img src="./dist/images/homeland_season_5_wide.jpg" alt="Cena da série Homeland" class="img-fluid rounded">
+                    <img src="./dist/images/homeland_foto_1.webp" alt="Cena da série Homeland" class="img-fluid rounded">
                 </div>
             </div>
         </div>
     </section>
 
     <!-- Section 2: Motivos para Assistir -->
-    <section class="bg-light py-5">
+    <section class="bg-light text-dark py-5">
         <div class="container text-center">
             <h2>Motivos para Assistir</h2>
             <p>Aclamada pela crítica, Homeland recebeu diversos prêmios, incluindo Globos de Ouro e Emmy, sendo uma das
                 séries mais impactantes da última década.</p>
-            <div class="row g-3">
-                <div class="col-md-3">
-                    <img src="./dist/images/homeland_cena1_t1e7.webp" alt="Cena 1" class="img-fluid rounded">
+            <div id="motivosCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-hight="350px">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="row g-3" >
+                            <div class="col-md-4">
+                                <img class="d-block w-100 rounded" src="./dist/images/homeland_cena1_t1e7.webp" alt="First slide">
+                            </div>
+                            <div class="col-md-4">
+                                <img class="d-block w-100 rounded" src="./dist/images/homeland_cena2_t1e9.webp" alt="Second slide">
+                            </div>
+                            <div class="col-md-4">
+                                <img class="d-block w-100 rounded" src="./dist/images/homeland_cena3_t1e11.webp" alt="Third slide">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="row g-3" >
+                            <div class="col-md-4">
+                                <img class="d-block w-100 rounded" src="./dist/images/homeland_cena_1.webp" alt="First slide">
+                            </div>
+                            <div class="col-md-4">
+                                <img class="d-block w-100 rounded" src="./dist/images/homeland_cena_2.jpg" alt="Second slide">
+                            </div>
+                            <div class="col-md-4">
+                                <img class="d-block w-100 rounded" src="./dist/images/homeland_cena_3.jpg" alt="Third slide">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="row g-3" >
+                            <div class="col-md-4">
+                                <img class="d-block w-100 rounded" src="./dist/images/homeland_cena_4.jpg" alt="First slide">
+                            </div>
+                            <div class="col-md-4">
+                                <img class="d-block w-100 rounded" src="./dist/images/homeland_cena_5.jpg" alt="Second slide">
+                            </div>
+                            <div class="col-md-4">
+                                <img class="d-block w-100 rounded" src="./dist/images/homeland_cena_6.jpg" alt="Third slide">
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="col-md-3">
-                    <img src="./dist/images/homeland_cena2_t1e9.webp" alt="Cena 2" class="img-fluid rounded">
-                </div>
-                <div class="col-md-3">
-                    <img src="./dist/images/homeland_cena3_t1e11.webp" alt="Cena 3" class="img-fluid rounded">
-                </div>
-                <div class="col-md-3">
-                    <img src="./dist/images/homeland_cena4_t1e12.webp" alt="Cena 4" class="img-fluid rounded">
+                <button class="carousel-control-prev" href="#motivosCarousel" type="button" data-bs-target="#motivosCarousel" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon"></span>
+                </button>
+                <button class="carousel-control-next" href="#motivosCarousel" type="button" data-bs-target="#motivosCarousel" data-bs-slide="next">
+                    <span class="carousel-control-next-icon"></span>
+                </button>
+                <div class="carousel-indicators">
+                    <button class="active" type="button" data-bs-target="#motivosCarousel" data-bs-slide-to="0"></button>
+                    <button type="button" data-bs-target="#motivosCarousel" data-bs-slide-to="1"></button>
+                    <button type="button" data-bs-target="#motivosCarousel" data-bs-slide-to="2"></button>
                 </div>
             </div>
         </div>
@@ -72,8 +113,8 @@
         <div class="container">
             <h2 class="text-center mb-4">Episódios Destacados</h2>
             <div class="row">
-                <div class="col-md-4">
-                    <div class="card">
+                <div class="col-md-4 d-flex align-items-stretch">
+                    <div class="card mb-2">
                         <img src="./dist/images/homeland_destaque_t1e1.webp" class="card-img-top" alt="Episódio 1">
                         <div class="card-body">
                             <h5 class="card-title">Episódio 1: Piloto</h5>
@@ -82,8 +123,8 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md-4">
-                    <div class="card">
+                <div class="col-md-4 d-flex align-items-stretch">
+                    <div class="card mb-2">
                         <img src="./dist/images/homeland_destaque_t1e9.webp" class="card-img-top" alt="Episódio 2">
                         <div class="card-body">
                             <h5 class="card-title">Episódio 9: A Escolha</h5>
@@ -92,8 +133,8 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md-4">
-                    <div class="card">
+                <div class="col-md-4 d-flex align-items-stretch">
+                    <div class="card mb-2">
                         <img src="./dist/images/homeland_destaque_t1e12.webp" class="card-img-top" alt="Episódio 3">
                         <div class="card-body">
                             <h5 class="card-title">Episódio 12: O Fim do Jogo</h5>
@@ -107,12 +148,12 @@
     </section>
 
     <!-- Section 4: Assista Agora -->
-    <section class="bg-dark text-light py-5 text-center">
+    <section class="bg-light text-dark py-5 text-center">
         <div class="container">
             <h2>Assista Agora</h2>
             <p>Disponível nas principais plataformas de streaming. Confira os trailers e cenas exclusivas!</p>
-            <a href="#" class="btn btn-primary">Assista no Netflix</a>
-            <a href="#" class="btn btn-secondary">Assista no Amazon Prime</a>
+            <a href=""><img class="px-3" src="./dist/images/icons/icons8-netflix.svg" alt="Assista no Netflix"></a>
+            <a href=""><img class="px-3" src="./dist/images/icons/icons8-amazon-prime.svg" alt="Assista no Netflix"></a>
         </div>
     </section>
 
@@ -120,7 +161,7 @@
     <section class="py-5">
         <div class="container text-center">
             <h2>Comentários de Fãs</h2>
-            <div class="row">
+            <div class="row text-light">
                 <div class="col-md-4">
                     <blockquote class="blockquote">
                         <p class="mb-0">"Homeland é uma das melhores séries de espionagem que já assisti! Cada episódio é
@@ -150,9 +191,21 @@
         <div class="container">
             <p>&copy; 2024 Homeland. Todos os direitos reservados.</p>
             <ul class="list-inline">
-                <li class="list-inline-item"><a href="#" class="text-light">Facebook</a></li>
-                <li class="list-inline-item"><a href="#" class="text-light">Twitter</a></li>
-                <li class="list-inline-item"><a href="#" class="text-light">Instagram</a></li>
+                <li class="fs-5">
+                    <a href="#">
+                        <i class="bi bi-facebook text-light"></i>
+                    </a>
+                </li>
+                <li class="fs-5">
+                    <a href="#">
+                        <i class="bi bi-twitter text-light"></i>
+                    </a>
+                </li>
+                <li class="fs-5">
+                    <a href="#">
+                        <i class="bi bi-instagram text-light"></i>
+                    </a>
+                </li>
             </ul>
         </div>
     </footer>
